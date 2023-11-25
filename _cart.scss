@@ -1,0 +1,212 @@
+.top_cart {
+    height: 400px;
+    background-image: url(img/backetfon.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.heading_cart {
+    color: #FFF;
+font-size: 64px;
+font-style: normal;
+font-weight: 600;
+line-height: 70px;
+margin-top: 127px;
+}
+
+.cart {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 32px;
+    margin-top: 64px;
+    margin-bottom: 64px;
+    &__name_box {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 14px;
+    }
+    &__left {
+        display: flex;
+        gap: 32px;
+    }
+    &__item {
+        border-top: 0.5px solid
+        #CACDD8;
+        padding-top: 25px;
+        padding-bottom: 32px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    &__info {
+        width: 276px;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+    }
+    &__content {
+        grid-column: span 8;
+    }
+    &__form {
+        border-radius: 20px;
+        background: #F7F6F6;
+        height: 556px;
+        grid-column: span 4;
+        display: flex;
+        flex-direction: column;
+    }
+    &__link-box {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        color: inherit;
+        color: #000;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 400;
+        text-decoration-line: underline;
+    }
+    &__link {
+            color: #000;
+            text-align: center;
+            font-family: Montserrat;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 210%; /* 29.4px */
+            text-decoration-line: underline;
+            &:hover {
+                color: #888;
+            }
+    }
+    &__input {
+        width: 71px;
+        height: 51px;
+        border-radius: 6px;
+        background: #F7F6F6;
+        outline: none;
+        border: none;
+        color: #000;
+        text-align: center;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 210%;
+        box-sizing: border-box;
+        text-align: center;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    &__button {
+        margin-top: 50px;
+        display: flex;
+        gap: 7px;
+    }
+    &__link-button {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50px;
+        border: 1px solid #000;
+        background: #ffffff;
+        width: 200px;
+        height: 37px;
+        color: #020202;
+        text-align: center;
+        font-weight: 400;
+        font-size: 14px;
+        transition: all 1s;
+        &:hover {
+            background: #000;
+            color: #ffffff;
+            cursor: pointer;
+            transform: scale(1.05);
+        }
+    }
+    &__form {
+        display: flex;
+        flex-direction: column;
+    }
+    &__form-title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: #000;
+        text-align: center;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        padding-top: 42px;
+        padding-bottom: 35px;
+    }
+    &__form-block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 44px;
+        padding-left: 28px;
+    }
+    &__form-input {
+        border: none;
+        border-bottom: 1px solid #cacdd8;
+        background: none;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        width: 288px;
+        outline: none;
+        color: #000;
+        &::placeholder {
+            color: #000;
+        }
+    }
+
+    &__form-amount {
+    color: #000;
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-top: 68px;
+    }
+    &__form-amount-bold {
+        font-weight: 500;
+    }
+    &__form-button-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 18px;
+        
+    }
+    &__form-button {
+        display: flex;
+        padding: 10px 63px 11px 90px;
+        align-items: center;
+        border-radius: 20px;
+        border: 1px solid #040404;
+        height: 37px;
+        &:hover {
+            background: #000;
+            color: #ffffff;
+            cursor: pointer;
+            animation: like 1s ease 0s 1 normal forwards;
+    }
+    @keyframes like {
+        0% {
+            transform: scale(1);
+        }
+    
+        50% {
+            transform: scale(1.1);
+        }
+    
+        100% {
+            transform: scale(1);
+        }
+    }
+}
+}
